@@ -1,6 +1,16 @@
+//tipagem de proposal
+interface RepositoryItemProps {
+    repository:{
+        name: string;
+        description: string;
+        html_url: string;
+    }
+}
+
+
 //componente de item de projeto 
 //construção de componente 
-export function RepositoryItem (props) {
+export function RepositoryItem (props: RepositoryItemProps) {
     return (
         <li>
         <strong>{props.repository.name }</strong>

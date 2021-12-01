@@ -3,12 +3,17 @@ import { RepositoryItem } from "./RepositoryItem";
 
 import '../style/repositories.scss';
 
+
+interface Repository {
+    name: string;
+    description: string;
+    html_url: string;
+}
+
 //construção de informação de propriedade
 // https://api.github.com/users/betolarbac/repos
-
-
 export function RepositoryList () {
-    const [repositories, setRepositories] = useState([])
+    const [repositories, setRepositories] = useState<Repository[]>([])
 
     useEffect(() => {
         //estado preenchido e estado de repositorio consumindo da Api 

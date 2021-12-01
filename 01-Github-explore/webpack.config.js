@@ -21,7 +21,7 @@ module.exports = {
         filename: 'bundle.js' 
     },
     resolve: {
-        extensions: ['.js', '.jsx', 'ts', 'tsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
 
     //configuração de server de atualização automatica 
